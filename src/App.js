@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Header from '../src/Header';
+import PlanetCards from './PlanetCards';
+import Data from './data.json';
+import { useState } from 'react';
+import Pagination from '../src/Pagination';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+      <Header />
+      <PlanetCards />
     </div>
   );
-}
+};
 
 export default App;
+/*
+"pl_name": "CoRoT-18 b",
+"hostname": "CoRoT-18",
+"disc_facility": "CoRoT",
+"discoverymethod": "Transit",
+"disc_year": "2011",
+"pl_orbper": "1.90009000",
+"pl_orbsmax": "0.028800",
+"pl_masse": "1048.83900",
+"pl_rade": "12.846",
+"pl_dens": "2.73000",
+"releasedate": "2019-10-10"*/
