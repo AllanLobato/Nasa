@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Header from '../src/Header';
-import PlanetCards from './PlanetCards';
-import Data from './data.json';
-import { useState } from 'react';
-import Pagination from '../src/Pagination';
+import Header from './components/Header';
+import PlanetCards from './components/PlanetCards';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
